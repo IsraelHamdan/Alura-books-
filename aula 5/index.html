@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta metacharset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title> meu AluraBooks 5</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+			integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+			crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+
+	<header class="header">
+		<img src="./imagens/Logo-2.svg" alt="">
+	</header>
+		<!-- 
+			Lang EN = This project was developed in the array methods course on the Alura platform, so the variable names are in Portuguese but all comments are in English and Portuguese for a better understanding
+			----------------------------------------------------------------------------------------------------------------
+			Lang PT-BR = Este projeto foi feito no curso de métodos de array da plataforma Alura, por isso os nomes das variaveis estão em português mas todos os comentarios estão em inglês e em português para um melhor entendimento
+		-->	
+	<body>
+		<section class="banner"></section>
+		  <!--
+				Lang EN = These buttons are used to filter categories on the page using the id and value of the button 
+				---------------------------------------------------------------------------------------------------------
+				Lang PT-BR = Esses botões são usados para filtrar as categorias de livro na página usando o valor e o id e o  id de cada botão
+			-->
+			<nav class="wrap">
+				<ul class="nav">
+					<li><button class="btn btn-front" href="#" id="btnFiltrarLivrosFront" value="front-end">LIVROS DE
+						FRONT-END</button>
+					</li>
+					<li><button class="btn btn-back" href="#" id="btnFiltrarLivrosBack" value="back-end">LIVROS DE BACK-END</button>
+					</li>
+					<li><button class="btn btn-dados" href="#" id="btnFiltrarLivrosDados" value="dados">LIVROS DE DADOS</button></li>
+					<li><button class="btn btn-disponiveis" href="#" id="btnLivrosDisponiveis" value="disponivel">LIVROS DISPONÍVEIS</button></li>
+					<li><button class="btn btn-ordenacao" href="#" id="btnOrdenarPorPreco">ORDENAR POR PREÇO</button></li>
+				</ul>
+			</nav>
+		<section class="livros wrap" id="livros">
+			<!--
+				Lang En = Element created dynamically in JS meeting a condition, we just define the section in the HTML to be able to use its ID
+				-----------------------------------------------------------------------------------------------------------
+				Lang PT-BR = Elemento criado dinamicamente no JS atendendo a uma condição, nos apenas definimos a secção no HTML para poder usar o ID dela
+			-->
+		</section> 
+		
+		<section id="valor_total_livros_disponiveis">
+			<!--
+				Lang En = Element created dynamically in JS meeting a condition, we just define the section in the HTML to be able to use its ID
+				-----------------------------------------------------------------------------------------------------------
+				Lang PT-BR = Elemento criado dinamicamente no JS atendendo a uma condição, nos apenas definimos a secção no HTML para poder usar o ID dela
+			-->
+		</section>
+
+		<footer class="rodape">
+			<p>Alura - Mergulhe em tecnologia</p>
+		</footer>
+		<!--
+			Lang EN = Importing JS files, each method corresponds to a different file 
+			-------------------------------------------------------------------------
+			Lang PT-BR = Importação dos arquivos JS, cada metodo corresponde a um arquivo diferente
+		-->
+		<script src="./app/main.js"></script>
+		<script src="./app/metodoForEach.js"></script>
+		<script src="./app/metodoMap.js"></script>
+		<script src="./app/metodoFilter.js"></script>
+		<script src="./app/sort.js"></script>
+		<script src="./app/reduce.js"></script>
+
+	</body>
+
+</html>
